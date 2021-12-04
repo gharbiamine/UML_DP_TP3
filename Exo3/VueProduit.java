@@ -1,19 +1,15 @@
+
+
 public class VueProduit {
-    protected String description;
-    protected String nom;
 
-    public VueProduit() {
+	protected String description ;
 
-    }
+	public VueProduit (String description){
+	    this.description=description;
+	}
 
-    public VueProduit(String description, String nom) {
-        this.description = description;
-        this.nom = nom;
-    }
+	public void affiche(){
+	    System.out.print(description);
+	}
 
-    public void affiche() {
-        System.out.print(nom);
-        System.out.print(description);
-
-    }
 }
